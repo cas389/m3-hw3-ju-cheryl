@@ -70,7 +70,9 @@ header {
 nav ul li {
 	display: inline-block;
 }
-
+ul {
+	text-align: center;
+}
 li a {
 	.main-font();
 	.main-link();
@@ -91,6 +93,7 @@ span a {
 span a:hover {
 	color: @black;
 }
+
 
 /*===========================
 
@@ -136,8 +139,13 @@ Photos
 Sections
 
 ===========================*/
-.view-menu {
-	clear: both;
+.view-menu,
+.contact-us {
+	padding: @main-padding;
+}
+
+.contact-us {
+	background-color: @gray;
 }
 
 
@@ -147,9 +155,9 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 
 ===========================*/
 @media screen and (min-width: 575px) {
-  /*Header */
-	li a {
-		padding-left: 2rem;
+	/* Header */
+	ul {
+		text-align: left;
 	}
 	/* Hero */
   .hero {

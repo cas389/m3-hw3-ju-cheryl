@@ -16,6 +16,32 @@ Reset Rule
 
 /*===========================
 
+Univeral
+
+===========================*/
+h1 {
+	.main-font();
+	color: @heading-color;
+}
+
+span {
+	.main-font();
+	.header-font();
+	color: @red;
+}
+
+button {
+	.main-font();
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: @yellow;
+	border-radius: 8px;
+	padding: .5rem 1rem;
+}
+
+
+/*===========================
+
 Header
 
 ===========================*/
@@ -23,6 +49,7 @@ Header
 header {
   background-color: @yellow;
 	margin: 0 auto;
+	padding: 1.5rem;
 }
 
 nav ul li {
@@ -30,9 +57,15 @@ nav ul li {
 }
 
 li a {
+	.main-font();
 	text-decoration: none;
+	color: @black;
+	padding-left: 1.5rem;
 }
 
+span a {
+	color: @red;
+}
 
 /*===========================
 
@@ -61,23 +94,6 @@ Hero
 	text-align: center;
 }
 
-
-
-/*===========================
-
-Links
-
-===========================*/
-button {
-	.main-font();
-	font-size: 18px;
-	text-transform: uppercase;
-	background-color: @yellow;
-	border-radius: 8px;
-	padding: .5rem 1rem;
-}
-
-
 /*===========================
 
 Photos
@@ -95,7 +111,14 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 
 ===========================*/
 @media screen and (min-width: 575px) {
-  /* Hero */
+  /*Header */
+	header {
+		padding: 3rem;
+	}
+	li a {
+		padding-left: 2rem;
+	}
+	/* Hero */
   .hero {
 		height: 25rem;
   }

@@ -22,7 +22,46 @@ Header
 
 header {
   background-color: @yellow;
+	margin: 0 auto;
 }
+
+nav ul li {
+	display: inline-block;
+}
+
+li a {
+	text-decoration: none;
+}
+
+
+/*===========================
+
+Hero
+
+===========================*/
+.hero {
+  width: 100vw;
+	height: 30%;
+  background: black;
+  overflow: hidden;
+	position: absolute;
+}
+
+.hero-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center bottom;
+  opacity: 33%;
+}
+
+.hero-items {
+	position: relative;
+	top: -11rem;
+	text-align: center;
+}
+
+
 
 /*===========================
 
@@ -36,4 +75,60 @@ button {
 	background-color: @yellow;
 	border-radius: 8px;
 	padding: .5rem 1rem;
+}
+
+
+/*===========================
+
+Photos
+
+===========================*/
+.reg-photo {
+	width: 100%;
+	max-width: 15rem;
+	object-fit: cover;
+}
+
+/*===========================
+
+Responsive Web Coding - 768px by 1024px (Tablet)
+
+===========================*/
+@media screen and (min-width: 575px) {
+  /* Hero */
+  .hero {
+		height: 25rem;
+  }
+	.hero-items {
+		top: -20rem;
+	}
+	/* Photos */
+	.reg-photo {
+		max-width: 30rem;
+	}
+}
+
+/*===========================
+
+Responsive Web Coding - 1366px by 768px (Laptop)
+
+===========================*/
+@media screen and (min-width: 1366px) {
+	/* Hero */
+	.hero {
+		height: 30rem;
+	}
+	.hero-items {
+		top: -23rem;
+	}
+}
+
+
+/*===========================
+
+Responsive Web Coding - 1920px by 1024 px (Desktop)
+
+===========================*/
+@media screen and (min-width: 1500px) {
+
 }

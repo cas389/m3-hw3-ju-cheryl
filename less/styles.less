@@ -37,8 +37,8 @@ Links
 ===========================*/
 
 .btn-primary {
-	.main-font ();
-	.header-font();
+.main-font ();
+.header-font();
 	font-size: 18px;
 	background-color: @yellow;
 	border-radius: 8px;
@@ -165,8 +165,13 @@ Footer
 footer {
 	background-color: @black;
 	border-top: 10px solid @yellow;
+	text-align: center;
 }
-
+.footer-logo {
+	width: 100%;
+	max-width: 200px;
+	padding: @main-padding;
+}
 
 
 
@@ -196,6 +201,10 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	/* Sections */
 	.contact-us {
 		padding-bottom: @layout-padding-desktop * 1.5;
+	}
+	/* Footer */
+	.footer-logo {
+		max-width: 400px;
 	}
 }
 
@@ -235,6 +244,10 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	}
 	.float-left {
 		padding: 0 @layout-padding-desktop;
+	}
+	/* Footer */
+	.footer-logo {
+		max-width: 500px;
 	}
 }
 

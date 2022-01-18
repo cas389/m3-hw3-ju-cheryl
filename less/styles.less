@@ -21,7 +21,6 @@ Univeral
 ===========================*/
 h1 {
 	.header-font();
-	color: @heading-color;
 }
 
 span {
@@ -133,6 +132,10 @@ Photos
 	object-fit: cover;
 }
 
+.float-right {
+	padding-right: @main-padding * 2;
+	padding-bottom: @main-padding;
+}
 
 /*===========================
 
@@ -155,10 +158,6 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 
 ===========================*/
 @media screen and (min-width: 575px) {
-	/* Header */
-	ul {
-		text-align: left;
-	}
 	/* Hero */
   .hero {
 		height: 25rem;
@@ -170,6 +169,9 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	.reg-photo {
 		max-width: 30rem;
 	}
+	.float-right {
+		padding: @main-padding;
+	}
 }
 
 /*===========================
@@ -178,12 +180,28 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 
 ===========================*/
 @media screen and (min-width: 1366px) {
+	/* Header */
+	header {
+		padding: @main-padding 1rem .75rem @layout-padding-desktop;
+	}
+	ul {
+		text-align: left;
+	}
 	/* Hero */
 	.hero {
 		height: 30rem;
 	}
 	.hero-items {
 		top: -23rem;
+	}
+	/* Sections */
+	.view-menu,
+	.contact-us {
+		padding: @layout-padding-desktop;
+	}
+	/* Photos */
+	.float-right {
+		padding: @main-padding @layout-padding-desktop;
 	}
 }
 

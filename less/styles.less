@@ -30,17 +30,32 @@ span {
 	color: @red;
 }
 
+
+/*===========================
+
+Links
+
+===========================*/
+
 button {
 	.main-font();
+	.header-font();
 	font-size: 18px;
-	text-transform: uppercase;
 	background-color: @yellow;
 	border-radius: 8px;
-	padding: .5rem 1rem;
+	padding: .5rem @main-padding;
+}
+
+button a {
+	.main-link ();
 }
 
 button:hover {
 	background-color: @red;
+	color: white;
+}
+
+button a:hover {
 	color: white;
 }
 
@@ -54,7 +69,7 @@ Header
 header {
   background-color: @yellow;
 	margin: 0 auto;
-	padding: 1.5rem;
+	padding: @main-padding 1rem .75rem 1rem;
 }
 
 nav ul li {
@@ -63,9 +78,8 @@ nav ul li {
 
 li a {
 	.main-font();
-	text-decoration: none;
-	color: @black;
-	padding-left: 1.5rem;
+	.main-link();
+	padding-left: @main-padding;
 }
 
 span a {
@@ -117,9 +131,6 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 ===========================*/
 @media screen and (min-width: 575px) {
   /*Header */
-	header {
-		padding: 3rem;
-	}
 	li a {
 		padding-left: 2rem;
 	}

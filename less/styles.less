@@ -63,33 +63,29 @@ header {
   background-color: @yellow;
 	margin: 0 auto;
 	padding: @main-padding 1rem .75rem 1rem;
-}
-
-nav ul li {
-	display: inline-block;
-}
-ul {
-	text-align: center;
-}
-li a {
-	.main-font();
-	.main-link();
-	padding-left: @main-padding;
-}
-
-li a:hover {
-	.main-font();
-	.main-link();
-	color: @red;
-	padding-left: @main-padding;
-}
-
-span a {
-	color: @red;
-}
-
-span a:hover {
-	color: @black;
+	nav ul li {
+		display: inline-block;
+	}
+	ul {
+		text-align: center;
+	}
+	li a {
+		.main-font();
+		.main-link();
+		padding-left: @main-padding;
+	}
+	li a:hover {
+		.main-font();
+		.main-link();
+		color: @red;
+		padding-left: @main-padding;
+	}
+	span a {
+		color: @red;
+	}
+	span a:hover {
+		color: @black;
+	}
 }
 
 
@@ -103,21 +99,19 @@ Hero
 	height: 200px;
   background: black;
   overflow: hidden;
-}
-
-.hero-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center bottom;
-  opacity: 33%;
-}
-
-.hero-items {
-	position: relative;
-	text-align: center;
-	top: -11rem;
-	margin: 0 auto;
+	.hero-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center bottom;
+	  opacity: 33%;
+	}
+	.hero-items {
+		position: relative;
+		text-align: center;
+		top: -11rem;
+		margin: 0 auto;
+	}
 }
 
 /*===========================
@@ -165,11 +159,11 @@ footer {
 	background-color: @black;
 	border-top: 10px solid @yellow;
 	text-align: center;
-}
-.footer-logo {
-	width: 100%;
-	max-width: 200px;
-	padding: @main-padding;
+	.footer-logo {
+		width: 100%;
+		max-width: 200px;
+		padding: @main-padding;
+	}
 }
 
 
@@ -183,10 +177,10 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	/* Hero */
   .hero {
 		height: 25rem;
+		.hero-items {
+			top: -20rem;
+		}
   }
-	.hero-items {
-		top: -20rem;
-	}
 	/* Photos */
 	.reg-photo {
 		max-width: 30rem;
@@ -216,9 +210,9 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	/* Header */
 	header {
 		padding: @main-padding 1rem .75rem @layout-padding-desktop;
-	}
-	ul {
-		text-align: left;
+		ul {
+			text-align: left;
+		}
 	}
 	/* Hero */
 	.hero {
@@ -233,9 +227,9 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	}
 	.contact-us {
 		padding: @layout-padding-desktop @layout-padding-desktop @layout-padding-desktop * 2 @layout-padding-desktop;
-	}
-	.contact-us-paragraph {
-		padding-right: @layout-padding-desktop;
+		.contact-us-paragraph {
+			padding-right: @layout-padding-desktop;
+		}
 	}
 	/* Photos */
 	.float-right {
